@@ -9,15 +9,9 @@ pipeline {
                 git 'https://github.com/ThanhNguyen281297/Test-Web-Domain.git'
             }
         }
-        stage('Build Image') {
-            steps {
-                sh 'docker build -t webdomain/v1 .'
-                sh 'docker images'
-            }
-        }
         stage('Deploy') {
             steps {
-                sh 'docker-compose up'
+                sh 'startweb.sh'
             }
         }
     }
