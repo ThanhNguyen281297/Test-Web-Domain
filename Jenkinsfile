@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Clone code') {
             steps {
-                git 'https://github.com/ThanhNguyen281297/Test-Web-Domain.git'
+                git 'https://github.com/cs01/pyxtermjs.git'
             }
         }
         stage('Deploy') {
