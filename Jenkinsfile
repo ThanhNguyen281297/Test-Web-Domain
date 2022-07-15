@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'startweb.sh'
+                sh './startweb.sh'
             }
         }
     }
