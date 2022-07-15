@@ -15,5 +15,10 @@ pipeline {
                 sh 'docker images'
             }
         }
+        stage('Deploy') {
+            steps {
+                sh 'docker-compose up'
+            }
+        }
     }
 }
