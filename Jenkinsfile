@@ -11,7 +11,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'sudo ./startweb.sh'
+                sh 'chmod +x startweb.sh'
+                sh './startweb.sh'
             }
         }
     }
