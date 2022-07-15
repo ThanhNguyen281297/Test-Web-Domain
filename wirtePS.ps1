@@ -1,1 +1,0 @@
-New-ADOrganizationalUnit -Name "PhongIT" -Path "DC=thanhnd,DC=com"
